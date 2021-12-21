@@ -28,15 +28,15 @@ void main() {
 
   test('it should also convert camelCase enums to words', () {
     expect(EnumToString.convertToString(TestEnum.valueOne, camelCase: true),
-        'Value one');
+        'Value One');
     expect(EnumToString.convertToString(TestEnum.Value2, camelCase: true),
         'Value 2');
     expect(EnumToString.convertToString(TestEnum.testValue3, camelCase: true),
-        'Test value 3');
+        'Test Value 3');
     expect(
         EnumToString.convertToString(OtherEnumForTesting.helloImAnEnumValue,
             camelCase: true),
-        'Hello im an enum value');
+        'Hello Im An Enum Value');
   });
 
   test('it should convert camelCase enums to words', () {
@@ -61,15 +61,15 @@ void main() {
       'it should convert camelCase enums to words using non deprecated functions',
       () {
     expect(EnumToString.convertToString(TestEnum.valueOne, camelCase: true),
-        'Value one');
+        'Value One');
     expect(EnumToString.convertToString(TestEnum.Value2, camelCase: true),
         'Value 2');
     expect(EnumToString.convertToString(TestEnum.testValue3, camelCase: true),
-        'Test value 3');
+        'Test Value 3');
     expect(
         EnumToString.convertToString(OtherEnumForTesting.helloImAnEnumValue,
             camelCase: true),
-        'Hello im an enum value');
+        'Hello Im An Enum Value');
   });
 
   test('it should convert a string to an enum', () {
@@ -123,7 +123,7 @@ void main() {
 
   test('it should convert enum to string list in camelCase', () {
     expect(
-        EnumToString.toList(TestEnum.values, camelCase: true)[0], 'Value one');
+        EnumToString.toList(TestEnum.values, camelCase: true)[0], 'Value One');
     expect(EnumToString.toList(TestEnum.values, camelCase: true)[1], 'Value 2');
   });
 
